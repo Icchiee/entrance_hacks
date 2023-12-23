@@ -1,0 +1,2 @@
+class MstUniv < ApplicationRecord
+end
