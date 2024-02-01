@@ -1,18 +1,22 @@
 <body>
+    <%= form_with(url: subject_selection_path, id: "subject_form") do |form| %>
     <div class = "school">
         <p>大学院</p>
-        <%# <%= form.select %>  
+        <%= select_tag :selected_school, options_for_select(@school) %>  
     </div>
     <div class = "course">
-        <p>研究科</p>
-        <%# <%= form.select %>  
+        <p>研究科</p>     
+        <%= select_tag :selected_department, options_for_select(@department) %>
     </div>
     <div class = "major">
-        <p>専攻</p>
-        <%# <%= form.select %>  
+        <p>専攻</p>     
+        <%= select_tag :selected_major, options_for_select(@major) %>
     </div>
     <div class = "subject">
-        <p>科目</p>
-        <%# <%= form.select %>  
+        <p>科目</p>     
+        <%= select_tag :selected_subject, options_for_select(@subject) %>
     </div>
+    <%= form.submit "院試問題＆回答を確認" %>
+
+    <% end %>
 </body>
