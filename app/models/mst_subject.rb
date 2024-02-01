@@ -1,0 +1,2 @@
+class MstSubject < ApplicationRecord
+end

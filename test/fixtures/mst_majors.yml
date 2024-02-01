@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  mma_major_name: MyString
+  mma_department_id: 1
+
+two:
+  mma_major_name: MyString
+  mma_department_id: 1

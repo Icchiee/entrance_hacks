@@ -1,0 +1,2 @@
+class MstDepartment < ApplicationRecord
+end
