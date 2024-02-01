@@ -6,4 +6,5 @@ Rails.application.routes.draw do
 
   root to:'exams#index'
   post 'subject_selection', to:"exams#subject_selection"
+  get 'subject_selection', to:"exams#subject_selection"
 end

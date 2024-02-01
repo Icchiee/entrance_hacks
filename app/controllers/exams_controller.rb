@@ -8,6 +8,8 @@ class ExamsController < ApplicationController
 
  def subject_selection
     pp params[:selected_school]
+    
+    
 
  end
 
