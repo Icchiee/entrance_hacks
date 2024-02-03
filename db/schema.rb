@@ -10,9 +10,36 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_12_23_160041) do
+ActiveRecord::Schema[7.0].define(version: 2024_02_01_115743) do
+  create_table "mst_departments", force: :cascade do |t|
+    t.string "mde_department_name"
+    t.integer "mde_univ_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "mst_majors", force: :cascade do |t|
+    t.string "mma_major_name"
+    t.integer "mma_department_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "mst_subjects", force: :cascade do |t|
+    t.string "msu_subject_name"
+    t.integer "msu_major_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "mst_univs", force: :cascade do |t|
     t.string "mun_univ_name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "trx_exam_contents", force: :cascade do |t|
+    t.integer "tec_subject_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  msu_subject_name: MyString
+  msu_major_id: 1
+
+two:
+  msu_subject_name: MyString
+  msu_major_id: 1
