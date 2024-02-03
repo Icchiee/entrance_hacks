@@ -1,5 +1,5 @@
 
-    <%= form_with(url: subject_selection_path, method: :post, id: "subject_form") do |form| %>
+    <%= form_with(url: detail_selection_path, method: :post, id: "subject_form") do |form| %>
     <div class = "school">
         <p>大学院</p>
         <%= select_tag :selected_school, options_for_select(@school) %>  
@@ -15,6 +15,10 @@
     <div class = "subject">
         <p>科目</p>     
         <%= select_tag :selected_subject, options_for_select(@subject) %>
+    </div>
+    <div class = "year">
+        <p>科目</p>     
+        <%= select_tag :selected_year, options_for_select(@year) %>
     </div>
     <%= form.submit "院試問題＆回答を確認" %>
 

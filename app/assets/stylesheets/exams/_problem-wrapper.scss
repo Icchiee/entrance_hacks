@@ -1,0 +1,74 @@
+.problem-wrapper{
+    p {
+        font-size: 36px;
+        font-weight: bold;
+          
+      }
+    .title{
+        font-size: 36px;
+        font-weight: bold;
+        margin-left: 45px;
+        .school-course{
+            margin-top: 30px;
+        }
+        .major-year{
+            margin-top: 30px;
+        }
+    }
+
+    .problems{
+        vertical-align: center;
+        margin-top: 60px;
+    .first{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+
+        .number{
+            margin-right: 170px;
+        }
+        .problem{
+            margin-right: 60px;
+        }
+    }
+
+    .second{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+
+        .number{
+            margin-right: 170px;
+        }
+        .problem{
+            margin-right: 60px;
+        }
+    }
+
+    .third{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+
+        .number{
+            margin-right: 170px;
+        }
+        .problem{
+            margin-right: 60px;
+        }
+    }
+
+    .fourth{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+
+        .number{
+            margin-right: 170px;
+        }
+        .problem{
+            margin-right: 60px;
+        }
+    }
+}
+}
