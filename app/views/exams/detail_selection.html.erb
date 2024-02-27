@@ -1,28 +1,28 @@
 <div class = "problem-wrapper">
     <div class = "title">
-    <div class = "school-course"><%=@details[:school]%>・<%=@details[:course]%></div>
+    <div class = "school-course"><%=@school_name%>・<%=@details[:course]%></div>
     <div class = "major-year"><%=@details[:subject]%>・<%=@details[:year]%>年度</div>
     </div>
 <div class = "problems">
     <div class = "first">
         <p class = "number">問1</p>
-        <p class = "problem">問題</p>
-        <p class = "solution">解答</p>
+        <a href = "entrance_hacks/problem/<%=@details[:school]%>" class = "problem">問題</a>
+        <a href = "entrance_hacks/solution/" class = "solution">解答</a>
     </div>
     <div class = "second">
         <p class = "number">問2</p>
-        <p class = "problem">問題</p>
-        <p class = "solution">解答</p>    
+        <a href = "entrance_hacks/solution/" class = "problem">問題</a>
+        <a href = "entrance_hacks/solution/" class = "solution">解答</a>    
     </div>
     <div class = "third">
         <p class = "number">問3</p>
-        <p class = "problem">問題</p>
-        <p class = "solution">解答</p>
+        <a href = "entrance_hacks/solution/" class = "problem">問題</a>
+        <a href = "entrance_hacks/solution/" class = "solution">解答</a>
     </div>
     <div class = "fourth">        
         <p class = "number">問4</p>
-        <p class = "problem">問題</p>
-        <p class = "solution">解答</p>
+        <a href = "entrance_hacks/solution/" class = "problem">問題</a>
+        <a href = "entrance_hacks/solution/" class = "solution">解答</a>
     </div>
     </div>
 </div>

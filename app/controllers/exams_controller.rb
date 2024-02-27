@@ -1,6 +1,7 @@
 class ExamsController < ApplicationController
  def index
-   @school = MstUniv.all.pluck(:mun_univ_name)
+   @school = MstUniv.all.pluck(:mun_univ_name,:id)
+   pp @school
    @department = MstDepartment.all.pluck(:mde_department_name)
    @major = MstMajor.all.pluck(:mma_major_name)
    @subject = MstSubject.all.pluck(:msu_subject_name)
@@ -15,8 +16,15 @@ class ExamsController < ApplicationController
       subject: params[:selected_subject],
       year: params[:selected_year]
     }
+    @school_name = MstUniv.where(id: params[:selected_school])
+                          .pluck(:mun_univ_name)
  end
 
+
+ def problem
+  @msg = "message"
+
+ end
 
 
 end

@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   root to:'exams#index'
   post 'detail_selection', to:"exams#detail_selection"
   get 'detail_selection', to:"exams#detail_selection"
+  get 'entrance_hacks/problem/:school', to:"exams#problem"
 end
